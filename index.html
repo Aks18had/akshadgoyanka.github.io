@@ -11,14 +11,34 @@
 
     <!-- ✅ Font Awesome for Social Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        /* ✅ Fix image sizing */
+        .spotlights section .image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        /* ✅ Ensure tagline does not become background */
+        .tagline {
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: 300;
+            margin-top: -2em;
+            margin-bottom: 2em;
+            color: #bbb;
+        }
+    </style>
 </head>
 <body class="is-preload">
 
-<!-- Header -->
+<!-- Header (Only Name) -->
 <header id="header">
     <h1>Akshad Goyanka</h1>
-    <h2 style="font-weight: 300; font-size: 1.2em;">Data Analyst | AI & ML | Visualization | GenAI Enthusiast</h2>
 </header>
+
+<!-- Tagline OUTSIDE header -->
+<p class="tagline">Data Analyst | AI & ML | Visualization | GenAI Enthusiast</p>
 
 <!-- Main -->
 <div id="main">
@@ -29,108 +49,94 @@
             <h2>About Me</h2>
         </header>
         <p>
-            Aspiring Data Professional actively seeking entry-level roles such as Junior Data Analyst, Data Scientist, AI/ML Intern. With a background in Electronics & Telecommunication and an MSc in Computer Science: AI & ML in progress, I’ve built hands-on projects in finance, product analytics, and GenAI. Skilled in Python, SQL, ML, and visualization tools, I enjoy transforming complex data into actionable insights that drive business outcomes. Open to collaborating on impactful data-driven solutions! Let’s connect and build something impactful together!
+            Aspiring Data Professional actively seeking entry-level roles such as Junior Data Analyst, Data Scientist, AI/ML Intern. With a background in Electronics & Telecommunication and an MSc in Computer Science: AI & ML in progress, I’ve built hands-on projects in finance, product analytics, and GenAI. Skilled in Python, SQL, ML, and visualization tools, I enjoy transforming complex data into actionable insights that drive business outcomes.
         </p>
     </section>
 
-    <!-- Projects -->
+    <!-- Projects Section -->
     <section id="projects" class="main">
         <header class="major">
             <h2>Projects</h2>
         </header>
         <div class="spotlights">
 
-            <!-- Project 1 -->
+            <!-- Project Template -->
             <section>
-                <img src="Ai image.jpg" alt="BCG GenAI" class="image" />
+                <div class="image"><img src="Ai image.jpg" alt="BCG GenAI" /></div>
                 <div class="content">
                     <h3>BCG GenAI Financial Chatbot</h3>
-                    <p>Built an AI-powered chatbot that analyzes 10-K and 10-Q financial reports from Microsoft, Apple, and Tesla (2021–2023). Implemented rule-based logic to answer user queries on revenue, profit, and product performance. <strong>Outcome:</strong> Enabled automated financial Q&A over complex document data.</p>
-                    <a href="https://github.com/Aks18had/BCG_GenAI_Financial_Simple_Chatbot" target="_blank" class="button">GitHub Link</a>
+                    <p>Built a GenAI chatbot to analyze 10-K/10-Q filings from Microsoft, Tesla, Apple (2021–2023) using rule-based logic and financial query understanding.</p>
+                    <a href="https://github.com/Aks18had/BCG_GenAI_Financial_Simple_Chatbot" class="button" target="_blank">GitHub</a>
                 </div>
             </section>
 
-            <!-- Project 2 -->
             <section>
-                <img src="Ai image (1).jpg" alt="Yes Bank Stock ML" class="image" />
+                <div class="image"><img src="Ai image (1).jpg" alt="Yes Bank Stock ML" /></div>
                 <div class="content">
                     <h3>Yes Bank Stock Price Prediction ML Model</h3>
-                    <p>Developed ML models to forecast monthly closing stock prices of Yes Bank. Used Linear Regression, Random Forest, and Gradient Boosting, with extensive EDA and feature engineering. <strong>Outcome:</strong> Improved prediction accuracy by 20% and supported investment decision-making.</p>
-                    <a href="https://github.com/Aks18had/Yes-Bank-Stock-ML-Prediction" target="_blank" class="button">GitHub Link</a>
+                    <p>Used Regression & Ensemble Models to forecast Yes Bank stock prices. Achieved 20% better accuracy through feature engineering & tuning.</p>
+                    <a href="https://github.com/Aks18had/Yes-Bank-Stock-ML-Prediction" class="button" target="_blank">GitHub</a>
                 </div>
             </section>
 
-            <!-- Project 3 -->
             <section>
-                <img src="Ai image (3).jpg" alt="Airbnb NYC" class="image" />
+                <div class="image"><img src="Ai image (3).jpg" alt="Airbnb NYC" /></div>
                 <div class="content">
                     <h3>Airbnb NYC EDA</h3>
-                    <p>Exploratory analysis on NYC Airbnb dataset to identify pricing trends, host behavior, and popular locations. Presented findings via data visualizations. <strong>Outcome:</strong> Discovered patterns to optimize rental pricing and targeting.</p>
-                    <a href="https://github.com/Aks18had/Airbnb_2019_NYC" target="_blank" class="button">GitHub Link</a>
+                    <p>Explored booking trends in NYC Airbnb 2019 dataset to derive pricing insights and location-based listing performance.</p>
+                    <a href="https://github.com/Aks18had/Airbnb_2019_NYC" class="button" target="_blank">GitHub</a>
                 </div>
             </section>
 
-            <!-- Project 4 -->
             <section>
-                <img src="Ai image (4).jpg" alt="India Airbnb 2024" class="image" />
+                <div class="image"><img src="Ai image (4).jpg" alt="India Airbnb 2024" /></div>
                 <div class="content">
-                    <h3>India Airbnb 2024 – Trending Picks ML Model Dashboard</h3>
-                    <p>Used ML models to classify and predict top-performing Airbnb listings for 2024 in India. Included model training, performance tuning, and visualization. <strong>Outcome:</strong> Helped identify future-proof investment listings.</p>
-                    <a href="https://github.com/Aks18had/Airbnb_Booking_Analysis_NYC_2019_Dashboard" target="_blank" class="button">GitHub Link</a>
+                    <h3>India Airbnb 2024 – ML Model Dashboard</h3>
+                    <p>Predicted trending listings using classification models. Delivered dashboard to highlight top properties for 2024.</p>
+                    <a href="https://github.com/Aks18had/Airbnb_Booking_Analysis_NYC_2019_Dashboard" class="button" target="_blank">GitHub</a>
                 </div>
             </section>
 
-            <!-- Project 5 -->
             <section>
-                <img src="Ai image (5).jpg" alt="Deloitte Forage" class="image" />
+                <div class="image"><img src="Ai image (5).jpg" alt="Deloitte Forage" /></div>
                 <div class="content">
                     <h3>Deloitte Data Analytics Simulation</h3>
-                    <p>Participated in a forensic analytics simulation. Built a fraud risk dashboard using Excel and Tableau, cleaned datasets, and presented actionable insights to management. <strong>Outcome:</strong> Identified high-risk transactions and improved fraud detection.</p>
-                    <p><em>No GitHub link available</em></p>
+                    <p>Built a fraud risk dashboard using Tableau & Excel in a forensic data simulation. Identified suspicious transactions.</p>
+                    <p><em>No GitHub Link</em></p>
                 </div>
             </section>
 
-            <!-- Project 6 -->
             <section>
-                <img src="Ai image (6).jpg" alt="Spotify Analytics" class="image" />
+                <div class="image"><img src="Ai image (6).jpg" alt="Spotify Analytics" /></div>
                 <div class="content">
                     <h3>Product Dissection on 'SPOTIFY'</h3>
-                    <p>Analyzed Spotify user engagement trends using SQL, EDA, and data visualization. Focused on listening behavior, retention metrics, and top genres. <strong>Outcome:</strong> Revealed actionable product insights for understanding user engagement of Product.</p>
-                    <a href="https://github.com/Aks18had/Product-Dissection-Spotify" target="_blank" class="button">GitHub Link</a>
+                    <p>Analyzed Spotify usage and retention using SQL + EDA. Derived product recommendations and data stories.</p>
+                    <a href="https://github.com/Aks18had/Product-Dissection-Spotify" class="button" target="_blank">GitHub</a>
                 </div>
             </section>
 
-            <!-- Project 7 -->
             <section>
-                <img src="Ai image (7).jpg" alt="Tata Forage" class="image" />
+                <div class="image"><img src="Ai image (7).jpg" alt="Tata Forage" /></div>
                 <div class="content">
-                    <h3>Tata Data Visualization Empowering Business with Effective Insights</h3>
-                    <p>Learned to build insightful dashboards and craft data stories using real business datasets. Delivered presentations simulating boardroom reporting. <strong>Outcome:</strong> Enhanced communication of business metrics via visuals.</p>
-                    <a href="https://github.com/Aks18had/Tata-Data-Visualization-Forage" target="_blank" class="button">GitHub Link</a>
+                    <h3>Tata Data Visualization (Forage)</h3>
+                    <p>Created business dashboards from real datasets. Delivered presentations simulating leadership reporting.</p>
+                    <a href="https://github.com/Aks18had/Tata-Data-Visualization-Forage" class="button" target="_blank">GitHub</a>
                 </div>
             </section>
 
         </div>
     </section>
 
-    <!-- Contact Me Section -->
+    <!-- Contact Icons Section -->
     <section id="contact" class="main special">
         <header class="major">
             <h2>Contact Me</h2>
         </header>
         <ul class="icons">
-            <li>
-                <a href="mailto:akshadgoyanka@gmail.com" class="icon solid fa-envelope" title="Email"><span class="label">Email</span></a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/akshad-goyanka-933563253/" class="icon brands fa-linkedin" title="LinkedIn" target="_blank"><span class="label">LinkedIn</span></a>
-            </li>
-            <li>
-                <a href="https://github.com/Aks18had" class="icon brands fa-github" title="GitHub" target="_blank"><span class="label">GitHub</span></a>
-            </li>
-            <li>
-                <a href="https://drive.google.com/drive/folders/1gX-VwNzEqJ5ipK9jE2Al8Na4WTTW7eAs?usp=sharing" class="icon solid fa-file" title="Resume" target="_blank"><span class="label">Resume</span></a>
-            </li>
+            <li><a href="mailto:akshadgoyanka@gmail.com" class="icon solid fa-envelope" title="Email"><span class="label">Email</span></a></li>
+            <li><a href="https://www.linkedin.com/in/akshad-goyanka-933563253/" class="icon brands fa-linkedin" target="_blank" title="LinkedIn"><span class="label">LinkedIn</span></a></li>
+            <li><a href="https://github.com/Aks18had" class="icon brands fa-github" target="_blank" title="GitHub"><span class="label">GitHub</span></a></li>
+            <li><a href="https://drive.google.com/drive/folders/1gX-VwNzEqJ5ipK9jE2Al8Na4WTTW7eAs?usp=sharing" class="icon solid fa-file" target="_blank" title="Resume"><span class="label">Resume</span></a></li>
         </ul>
     </section>
 
@@ -146,7 +152,7 @@
                 <div class="field"><textarea name="message" placeholder="Your Message to Me" rows="6" required></textarea></div>
             </div>
             <ul class="actions special">
-                <li><input type="submit" value="Send" class="primary" /></li>
+                <li><input type="submit" value="Send Message" class="primary" /></li>
             </ul>
         </form>
     </section>
@@ -155,7 +161,7 @@
 
 <!-- Footer -->
 <footer id="footer">
-    <p class="copyright">© 2025 Akshad Goyanka | Powered by HTML5 UP</p>
+    <p class="copyright">© 2025 Akshad Goyanka | Powered by Solid State</p>
 </footer>
 
 <!-- Scripts -->
