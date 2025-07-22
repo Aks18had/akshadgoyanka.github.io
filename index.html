@@ -9,17 +9,11 @@
     <link rel="stylesheet" href="main.css" />
     <noscript><link rel="stylesheet" href="noscript.css" /></noscript>
 
-    <!-- ✅ Font Awesome for Social Icons -->
+    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Custom Styles -->
     <style>
-        /* ✅ Fix image sizing */
-        .spotlights section .image img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            border-radius: 5px;
-        }
-        /* ✅ Ensure tagline does not become background */
         .tagline {
             text-align: center;
             font-size: 1.2em;
@@ -27,6 +21,14 @@
             margin-top: -2em;
             margin-bottom: 2em;
             color: #bbb;
+        }
+
+        /* ✅ FIX IMAGE SIZE AND SCROLL LENGTH */
+        .spotlights section .image img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -49,7 +51,7 @@
             <h2>About Me</h2>
         </header>
         <p>
-            Aspiring Data Professional actively seeking entry-level roles such as Junior Data Analyst, Data Scientist, AI/ML Intern. With a background in Electronics & Telecommunication and an MSc in Computer Science: AI & ML in progress, I’ve built hands-on projects in finance, product analytics, and GenAI. Skilled in Python, SQL, ML, and visualization tools, I enjoy transforming complex data into actionable insights that drive business outcomes.
+            Aspiring Data Professional actively seeking entry-level roles such as Junior Data Analyst, Data Scientist, AI/ML Intern. With a background in Electronics & Telecommunication and an MSc in Computer Science: AI & ML in progress, I’ve built hands-on projects in finance, product analytics, and GenAI. Skilled in Python, SQL, ML, and visualization tools, I enjoy transforming complex data into actionable insights that drive business outcomes.Open to collaborating on impactful data-driven solutions! Let’s connect and build something impactful together!
         </p>
     </section>
 
@@ -60,12 +62,11 @@
         </header>
         <div class="spotlights">
 
-            <!-- Project Template -->
             <section>
                 <div class="image"><img src="Ai image.jpg" alt="BCG GenAI" /></div>
                 <div class="content">
                     <h3>BCG GenAI Financial Chatbot</h3>
-                    <p>Built a GenAI chatbot to analyze 10-K/10-Q filings from Microsoft, Tesla, Apple (2021–2023) using rule-based logic and financial query understanding.</p>
+                    <p>Built an AI-powered chatbot that analyzes 10-K and 10-Q financial reports from Microsoft, Apple, and Tesla (2021–2023). Implemented rule-based logic to answer user queries on revenue, profit, and product performance. Outcome: Enabled automated financial Q&A over complex document data.</p>
                     <a href="https://github.com/Aks18had/BCG_GenAI_Financial_Simple_Chatbot" class="button" target="_blank">GitHub</a>
                 </div>
             </section>
@@ -74,7 +75,7 @@
                 <div class="image"><img src="Ai image (1).jpg" alt="Yes Bank Stock ML" /></div>
                 <div class="content">
                     <h3>Yes Bank Stock Price Prediction ML Model</h3>
-                    <p>Used Regression & Ensemble Models to forecast Yes Bank stock prices. Achieved 20% better accuracy through feature engineering & tuning.</p>
+                    <p>Developed ML models to forecast monthly closing stock prices of Yes Bank. Used Linear Regression, Random Forest, and Gradient Boosting, with extensive EDA and feature engineering. Outcome: Improved prediction accuracy by 20% and supported investment decision-making.</p>
                     <a href="https://github.com/Aks18had/Yes-Bank-Stock-ML-Prediction" class="button" target="_blank">GitHub</a>
                 </div>
             </section>
@@ -83,7 +84,7 @@
                 <div class="image"><img src="Ai image (3).jpg" alt="Airbnb NYC" /></div>
                 <div class="content">
                     <h3>Airbnb NYC EDA</h3>
-                    <p>Explored booking trends in NYC Airbnb 2019 dataset to derive pricing insights and location-based listing performance.</p>
+                    <p>Exploratory analysis on NYC Airbnb dataset to identify pricing trends, host behavior, and popular locations. Presented findings via data visualizations. Outcome: Discovered patterns to optimize rental pricing and targeting.</p>
                     <a href="https://github.com/Aks18had/Airbnb_2019_NYC" class="button" target="_blank">GitHub</a>
                 </div>
             </section>
@@ -92,7 +93,7 @@
                 <div class="image"><img src="Ai image (4).jpg" alt="India Airbnb 2024" /></div>
                 <div class="content">
                     <h3>India Airbnb 2024 – ML Model Dashboard</h3>
-                    <p>Predicted trending listings using classification models. Delivered dashboard to highlight top properties for 2024.</p>
+                    <p>Used ML models to classify and predict top-performing Airbnb listings for 2024 in India. Included model training, performance tuning, and visualization. Outcome: Helped identify future-proof investment listings.</p>
                     <a href="https://github.com/Aks18had/Airbnb_Booking_Analysis_NYC_2019_Dashboard" class="button" target="_blank">GitHub</a>
                 </div>
             </section>
@@ -101,7 +102,7 @@
                 <div class="image"><img src="Ai image (5).jpg" alt="Deloitte Forage" /></div>
                 <div class="content">
                     <h3>Deloitte Data Analytics Simulation</h3>
-                    <p>Built a fraud risk dashboard using Tableau & Excel in a forensic data simulation. Identified suspicious transactions.</p>
+                    <p>Participated in a forensic analytics simulation. Built a fraud risk dashboard using Excel and Tableau, cleaned datasets, and presented actionable insights to management. Outcome: Identified high-risk transactions and improved fraud detection.</p>
                     <p><em>No GitHub Link</em></p>
                 </div>
             </section>
@@ -110,7 +111,7 @@
                 <div class="image"><img src="Ai image (6).jpg" alt="Spotify Analytics" /></div>
                 <div class="content">
                     <h3>Product Dissection on 'SPOTIFY'</h3>
-                    <p>Analyzed Spotify usage and retention using SQL + EDA. Derived product recommendations and data stories.</p>
+                    <p>Analyzed Spotify user engagement trends using SQL, EDA, and data visualization. Focused on listening behavior, retention metrics, and top genres. Outcome: Revealed actionable product insights for understanding user engagement of Product.</p>
                     <a href="https://github.com/Aks18had/Product-Dissection-Spotify" class="button" target="_blank">GitHub</a>
                 </div>
             </section>
@@ -119,7 +120,7 @@
                 <div class="image"><img src="Ai image (7).jpg" alt="Tata Forage" /></div>
                 <div class="content">
                     <h3>Tata Data Visualization (Forage)</h3>
-                    <p>Created business dashboards from real datasets. Delivered presentations simulating leadership reporting.</p>
+                    <p>Learned to build insightful dashboards and craft data stories using real business datasets. Delivered presentations simulating boardroom reporting. Outcome: Enhanced communication of business metrics via visuals.</p>
                     <a href="https://github.com/Aks18had/Tata-Data-Visualization-Forage" class="button" target="_blank">GitHub</a>
                 </div>
             </section>
