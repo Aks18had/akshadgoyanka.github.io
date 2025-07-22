@@ -1,12 +1,12 @@
-# 💼 Akshad Goyanka - Personal Portfolio Website
+#💼 Akshad Goyanka - Personal Portfolio Website
 
 Welcome to my personal portfolio website, built using the **Solid State** theme from HTML5 UP and fully customized to showcase my data analytics and machine learning projects.
 
-🌐 **Live Website**: [aks18had.github.io/akshadgoyanka.github.io](https://aks18had.github.io/akshadgoyanka.github.io/)
+🌐**Live Website**: [aks18had.github.io/akshadgoyanka.github.io](https://aks18had.github.io/akshadgoyanka.github.io/)
 
 ---
 
-## 📌 About Me
+##📌 About Me
 
 **Aspiring Data Professional | Analytics | GenAI | MSc in AI & ML**
 
@@ -14,21 +14,20 @@ Currently pursuing an MSc in Computer Science with a specialization in AI & ML. 
 
 ---
 
+
+##🛠️ Tech Stack
+
+-**Languages**: Python, SQL, MySQL
+-**Tools**: Tableau, Power BI, Excel, Git, GitHub
+-**Libraries**: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
+
 ---
 
-## 🛠️ Tech Stack
+##📬 Contact
 
-- **Languages**: Python, SQL, MySQL
-- **Tools**: Tableau, Power BI, Excel, Git, GitHub
-- **Libraries**: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
-
----
-
-## 📬 Contact
-
-- 📧 Email: [akshadgoyanka@gmail.com](mailto:akshadgoyanka@gmail.com)
-- 💼 LinkedIn: [Akshad Goyanka](https://www.linkedin.com/in/akshad-goyanka-933563253/)
-- 💻 GitHub: [@Aks18had](https://github.com/Aks18had)
+-📧 Email: [akshadgoyanka@gmail.com](mailto:akshadgoyanka@gmail.com)
+-💼 LinkedIn: [Akshad Goyanka](https://www.linkedin.com/in/akshad-goyanka-933563253/)
+-💻 GitHub: [@Aks18had](https://github.com/Aks18had)
 
 ---
 
@@ -41,14 +40,14 @@ Currently pursuing an MSc in Computer Science with a specialization in AI & ML. 
 
 ---
 
-## 🎨 Credits
+##🎨 Credits
 
-- Design Theme: [Solid State](https://html5up.net/solid-state) by HTML5 UP (CC BY 3.0)
-- Icons: [Font Awesome](https://fontawesome.com/)
+-Design Theme: [Solid State](https://html5up.net/solid-state) by HTML5 UP (CC BY 3.0)
+-Icons: [Font Awesome](https://fontawesome.com/)
 
 ---
 
-## ✅ Status
+##✅ Status
 
 **Portfolio Complete and Live** 🎉  
 Mobile-responsive, optimized, and ready for recruiters!
