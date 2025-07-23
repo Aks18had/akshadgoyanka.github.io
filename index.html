@@ -16,26 +16,28 @@
     h1, h2, h3 {
       color: #ffffff;
     }
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 20px;
+
+    /* Grid Layout */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
     }
-    .col-6 {
-      width: 48%;
-    }
+
     .box {
       background: #2a2a2a;
-      padding: 1em;
+      padding: 1.5em;
       border-radius: 10px;
     }
+
     .project-img, .cert-img {
       width: 100%;
       height: 200px;
       object-fit: cover;
       border-radius: 5px;
+      margin-bottom: 1em;
     }
+
     input, textarea {
       background: #2a2a2a;
       border: 1px solid #444;
@@ -44,6 +46,7 @@
       padding: 0.75em;
       border-radius: 6px;
     }
+
     input[type="submit"] {
       background: #00adb5;
       border: none;
@@ -53,9 +56,11 @@
       border-radius: 6px;
       transition: 0.3s;
     }
+
     input[type="submit"]:hover {
       background: #007b80;
     }
+
     .icons {
       margin-top: 1.5em;
       list-style: none;
@@ -63,29 +68,33 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 1.5em;
+      gap: 2em;
     }
+
     .icons li {
       text-align: center;
     }
+
     .icons a {
       font-size: 1.8em;
       color: #00adb5;
       transition: 0.3s;
-      display: block;
     }
+
     .icons a:hover {
       color: #ffffff;
     }
+
     .icons span.label {
       display: block;
       margin-top: 0.3em;
       font-size: 0.9em;
       color: #f0f0f0;
     }
+
     @media screen and (max-width: 768px) {
-      .col-6 {
-        width: 100%;
+      .icons {
+        flex-direction: column;
       }
     }
   </style>
@@ -116,46 +125,53 @@
 <section id="projects" class="wrapper style1 special">
   <div class="inner">
     <header class="major"><h2>My Projects</h2></header>
-    <div class="row">
-      <div class="col-6 box">
+    <div class="grid-2">
+      <div class="box">
         <img src="Ai image.jpg" alt="Project 1" class="project-img">
         <h3>BCG GenAI Financial Chatbot</h3>
-        <p><strong>Summary:</strong> Built a GenAI chatbot for 10-K/10-Q reports.<br><strong>Outcome:</strong> Enabled automated financial Q&A.</p>
+        <p><strong>Summary:</strong> Built GenAI chatbot analyzing 10-K/10-Q reports.<br>
+        <strong>Outcome:</strong> Enabled automated Q&A from complex financial docs.</p>
         <a href="https://github.com/Aks18had/BCG_GenAI_Financial_Simple_Chatbot" class="button small">GitHub</a>
       </div>
-      <div class="col-6 box">
+      <div class="box">
         <img src="Ai image (1).jpg" alt="Project 2" class="project-img">
         <h3>Yes Bank Stock Price Prediction</h3>
-        <p><strong>Summary:</strong> Forecasted Yes Bank stock using ML models.<br><strong>Outcome:</strong> 20% improvement in accuracy.</p>
+        <p><strong>Summary:</strong> Built ML model with regression + EDA.<br>
+        <strong>Outcome:</strong> Increased accuracy by 20% for monthly forecasts.</p>
         <a href="https://github.com/Aks18had/Yes-Bank-Stock-ML-Prediction" class="button small">GitHub</a>
       </div>
-      <div class="col-6 box">
+      <div class="box">
         <img src="Ai image (3).jpg" alt="Project 3" class="project-img">
         <h3>Airbnb NYC EDA</h3>
-        <p><strong>Summary:</strong> Analyzed booking trends and host behavior.<br><strong>Outcome:</strong> Better targeting & pricing insights.</p>
+        <p><strong>Summary:</strong> Explored booking & pricing trends in NYC data.<br>
+        <strong>Outcome:</strong> Insights to optimize targeting & pricing.</p>
         <a href="https://github.com/Aks18had/Airbnb_2019_NYC" class="button small">GitHub</a>
       </div>
-      <div class="col-6 box">
+      <div class="box">
         <img src="Ai image (4).jpg" alt="Project 4" class="project-img">
         <h3>India Airbnb 2024 ML Dashboard</h3>
-        <p><strong>Summary:</strong> Predicted top listings using ML.<br><strong>Outcome:</strong> Future-proof investment recommendations.</p>
+        <p><strong>Summary:</strong> Used ML to classify top listings for 2024.<br>
+        <strong>Outcome:</strong> Helped identify best investment opportunities.</p>
         <a href="https://github.com/Aks18had/Airbnb_Booking_Analysis_NYC_2019_Dashboard" class="button small">GitHub</a>
       </div>
-      <div class="col-6 box">
+      <div class="box">
         <img src="Ai image (5).jpg" alt="Project 5" class="project-img">
         <h3>Deloitte Data Analytics Simulation</h3>
-        <p><strong>Summary:</strong> Built fraud risk dashboards.<br><strong>Outcome:</strong> Detected suspicious transactions via Tableau.</p>
+        <p><strong>Summary:</strong> Built Tableau fraud detection dashboard.<br>
+        <strong>Outcome:</strong> Detected risk transactions from cleaned data.</p>
       </div>
-      <div class="col-6 box">
+      <div class="box">
         <img src="Ai image (6).jpg" alt="Project 6" class="project-img">
         <h3>Spotify Product Dissection</h3>
-        <p><strong>Summary:</strong> Used SQL to analyze engagement.<br><strong>Outcome:</strong> Revealed insights into retention patterns.</p>
+        <p><strong>Summary:</strong> Used SQL & EDA for engagement analysis.<br>
+        <strong>Outcome:</strong> Revealed user trends & genre preferences.</p>
         <a href="https://github.com/Aks18had/Product-Dissection-Spotify" class="button small">GitHub</a>
       </div>
-      <div class="col-6 box">
+      <div class="box">
         <img src="Ai image (7).jpg" alt="Project 7" class="project-img">
         <h3>Tata Data Visualization Forage</h3>
-        <p><strong>Summary:</strong> Built dashboards and visual reports.<br><strong>Outcome:</strong> Simulated boardroom-style presentations.</p>
+        <p><strong>Summary:</strong> Simulated boardroom dashboards.<br>
+        <strong>Outcome:</strong> Improved data storytelling in presentations.</p>
         <a href="https://github.com/Aks18had/Tata-Data-Visualization-Forage" class="button small">GitHub</a>
       </div>
     </div>
@@ -166,35 +182,35 @@
 <section id="certs" class="wrapper style2 special">
   <div class="inner">
     <header class="major"><h2>Achievements & Certifications</h2></header>
-    <div class="row">
-      <div class="col-6 box">
+    <div class="grid-2">
+      <div class="box">
         <img src="Screenshot 2025-04-30 184951.png" alt="Python Badge" class="cert-img">
         <h3>Python – Gold Badge (HackerRank)</h3>
       </div>
-      <div class="col-6 box">
+      <div class="box">
         <img src="Screenshot 2025-04-30 185304.png" alt="SQL Badge" class="cert-img">
         <h3>SQL – Gold Badge (HackerRank)</h3>
       </div>
-      <div class="col-6 box">
-        <img src="Screenshot 2025-07-23 195815.png" alt="BCG Certificate" class="cert-img">
-        <h3>BCG GenAI Job Simulation</h3>
-        <p>Built a financial chatbot using SEC filings and rule-based logic.</p>
+      <div class="box">
+        <img src="Screenshot 2025-07-23 195815.png" alt="BCG Cert" class="cert-img">
+        <h3>BCG GenAI Simulation</h3>
+        <p>Built a chatbot using SEC data and GenAI pipeline.</p>
       </div>
-      <div class="col-6 box">
-        <img src="Screenshot 2025-07-23 195704.png" alt="Deloitte Certificate" class="cert-img">
+      <div class="box">
+        <img src="Screenshot 2025-07-23 195704.png" alt="Deloitte Cert" class="cert-img">
         <h3>Deloitte Analytics Simulation</h3>
-        <p>Created dashboards and insights for forensic investigations.</p>
+        <p>Fraud analysis & dashboard for forensic tech case.</p>
       </div>
-      <div class="col-6 box">
-        <img src="Screenshot 2025-07-23 195758.png" alt="Tata Certificate" class="cert-img">
-        <h3>Tata Visualization Simulation</h3>
-        <p>Crafted business insights using visual storytelling.</p>
+      <div class="box">
+        <img src="Screenshot 2025-07-23 195758.png" alt="Tata Cert" class="cert-img">
+        <h3>Tata Visualization Program</h3>
+        <p>Visualized insights for business metric storytelling.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Contact Section -->
+<!-- Contact -->
 <section id="footer">
   <div class="inner">
     <header><h2>Get in Touch</h2></header>
@@ -209,6 +225,7 @@
       </ul>
     </form>
 
+    <!-- Contact Icons -->
     <ul class="icons">
       <li>
         <a href="mailto:akshadgoyanka@gmail.com" class="icon solid fa-envelope" title="Email"></a>
