@@ -6,8 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
+    body {
+      background: #1a1a1a;
+      color: #f0f0f0;
+    }
+    h1, h2, h3 {
+      color: #ffffff;
+    }
     .project-img, .cert-img {
       width: 100%;
       height: 200px;
@@ -23,6 +30,50 @@
       flex-wrap: wrap;
       justify-content: center;
     }
+    .box {
+      background: #2a2a2a;
+      padding: 1em;
+      border-radius: 10px;
+    }
+    input, textarea {
+      background: #2a2a2a;
+      border: 1px solid #444;
+      color: #fff;
+      width: 100%;
+      padding: 0.75em;
+      border-radius: 6px;
+    }
+    input[type="submit"] {
+      background: #00adb5;
+      border: none;
+      color: #fff;
+      padding: 0.75em 2em;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+    input[type="submit"]:hover {
+      background: #007b80;
+    }
+    .icons {
+      margin-top: 1.5em;
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .icons li {
+      margin: 0 1em;
+    }
+    .icons a {
+      font-size: 1.5em;
+      color: #00adb5;
+      transition: 0.3s;
+    }
+    .icons a:hover {
+      color: #ffffff;
+    }
     @media screen and (max-width: 768px) {
       .col-6 {
         width: 100%;
@@ -37,7 +88,7 @@
 <section id="header" style="padding: 4em 0;">
   <div class="inner" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; text-align: left;">
     <div style="flex: 1; min-width: 200px; text-align: center;">
-      <img src="Profile photo.png" alt="Profile Photo" style="border-radius: 50%; width: 180px; height: 160px;" />
+      <img src="Profile photo.png" alt="Profile Photo" style="border-radius: 50%; width: 180px; height: 180px;" />
     </div>
     <div style="flex: 2; min-width: 300px; padding: 1em;">
       <h1><strong>Akshad Goyanka</strong></h1>
@@ -58,59 +109,60 @@
   <div class="inner">
     <header class="major"><h2>My Projects</h2></header>
     <div class="row">
-      <!-- Repeat this structure for each project -->
+      <!-- Project Boxes (2 per row) -->
+      <!-- Repeat block for each project -->
       <div class="col-6 box">
-        <img src="Ai image.jpg" alt="Project 1" class="project-img">
+        <img src="Ai image.jpg" class="project-img" alt="Project 1">
         <h3>BCG GenAI Financial Chatbot</h3>
-        <p><strong>Summary:</strong> Built an AI-powered chatbot analyzing 10-K/10-Q filings from Microsoft, Apple, and Tesla.<br>
+        <p><strong>Summary:</strong> Built an AI-powered chatbot analyzing 10-K/10-Q filings.<br>
         <strong>Outcome:</strong> Enabled automated financial Q&A over complex document data.</p>
         <a href="https://github.com/Aks18had/BCG_GenAI_Financial_Simple_Chatbot" class="button small">GitHub</a>
       </div>
 
       <div class="col-6 box">
-        <img src="Ai image (1).jpg" alt="Project 2" class="project-img">
+        <img src="Ai image (1).jpg" class="project-img" alt="Project 2">
         <h3>Yes Bank Stock Price Prediction</h3>
-        <p><strong>Summary:</strong> Built ML models using regression and ensemble methods with feature engineering.<br>
+        <p><strong>Summary:</strong> Used ML models and EDA to predict Yes Bank stock price.<br>
         <strong>Outcome:</strong> Improved prediction accuracy by 20%.</p>
         <a href="https://github.com/Aks18had/Yes-Bank-Stock-ML-Prediction" class="button small">GitHub</a>
       </div>
 
       <div class="col-6 box">
-        <img src="Ai image (3).jpg" alt="Project 3" class="project-img">
+        <img src="Ai image (3).jpg" class="project-img" alt="Project 3">
         <h3>Airbnb NYC EDA</h3>
-        <p><strong>Summary:</strong> Explored Airbnb data for pricing and host behavior trends.<br>
-        <strong>Outcome:</strong> Helped optimize rental strategy and pricing.</p>
+        <p><strong>Summary:</strong> Analyzed NYC Airbnb data for pricing, hosts, and trends.<br>
+        <strong>Outcome:</strong> Helped optimize rental strategies and targeting.</p>
         <a href="https://github.com/Aks18had/Airbnb_2019_NYC" class="button small">GitHub</a>
       </div>
 
       <div class="col-6 box">
-        <img src="Ai image (4).jpg" alt="Project 4" class="project-img">
+        <img src="Ai image (4).jpg" class="project-img" alt="Project 4">
         <h3>India Airbnb 2024 ML Dashboard</h3>
-        <p><strong>Summary:</strong> Built a predictive model to classify top-performing listings.<br>
-        <strong>Outcome:</strong> Identified future-proof investment options.</p>
+        <p><strong>Summary:</strong> Built ML model to identify top Airbnb listings for 2024.<br>
+        <strong>Outcome:</strong> Helped users find future-proof investments.</p>
         <a href="https://github.com/Aks18had/Airbnb_Booking_Analysis_NYC_2019_Dashboard" class="button small">GitHub</a>
       </div>
 
       <div class="col-6 box">
-        <img src="Ai image (5).jpg" alt="Project 5" class="project-img">
+        <img src="Ai image (5).jpg" class="project-img" alt="Project 5">
         <h3>Deloitte Data Analytics Simulation</h3>
-        <p><strong>Summary:</strong> Created a fraud risk dashboard using Tableau and Excel.<br>
-        <strong>Outcome:</strong> Identified high-risk transactions for better detection.</p>
+        <p><strong>Summary:</strong> Created fraud detection dashboard using Tableau and Excel.<br>
+        <strong>Outcome:</strong> Identified high-risk transactions effectively.</p>
       </div>
 
       <div class="col-6 box">
-        <img src="Ai image (6).jpg" alt="Project 6" class="project-img">
+        <img src="Ai image (6).jpg" class="project-img" alt="Project 6">
         <h3>Spotify Product Dissection</h3>
-        <p><strong>Summary:</strong> Analyzed engagement trends using SQL & EDA.<br>
-        <strong>Outcome:</strong> Provided insights into listening behavior and retention.</p>
+        <p><strong>Summary:</strong> Used SQL and EDA to uncover listening behavior patterns.<br>
+        <strong>Outcome:</strong> Provided insights for product improvement.</p>
         <a href="https://github.com/Aks18had/Product-Dissection-Spotify" class="button small">GitHub</a>
       </div>
 
       <div class="col-6 box">
-        <img src="Ai image (7).jpg" alt="Project 7" class="project-img">
+        <img src="Ai image (7).jpg" class="project-img" alt="Project 7">
         <h3>Tata Data Visualization Forage</h3>
-        <p><strong>Summary:</strong> Created dashboards simulating boardroom presentations.<br>
-        <strong>Outcome:</strong> Improved business storytelling with visuals.</p>
+        <p><strong>Summary:</strong> Simulated business dashboards and insights storytelling.<br>
+        <strong>Outcome:</strong> Strengthened business presentation skills.</p>
         <a href="https://github.com/Aks18had/Tata-Data-Visualization-Forage" class="button small">GitHub</a>
       </div>
     </div>
@@ -122,37 +174,34 @@
   <div class="inner">
     <header class="major"><h2>Achievements & Certifications</h2></header>
     <div class="row">
-      <!-- Badges Row -->
       <div class="col-6 box">
-        <img src="Screenshot 2025-04-30 184951.png" alt="Python Badge" class="cert-img">
+        <img src="Screenshot 2025-04-30 184951.png" class="cert-img" alt="Python Badge">
         <h3>Python – Gold Badge (HackerRank)</h3>
       </div>
       <div class="col-6 box">
-        <img src="Screenshot 2025-04-30 185304.png" alt="SQL Badge" class="cert-img">
+        <img src="Screenshot 2025-04-30 185304.png" class="cert-img" alt="SQL Badge">
         <h3>SQL – Gold Badge (HackerRank)</h3>
       </div>
-
-      <!-- Certificates Row -->
       <div class="col-6 box">
-        <img src="Screenshot 2025-07-23 195815.png" alt="BCG Certificate" class="cert-img">
+        <img src="Screenshot 2025-07-23 195815.png" class="cert-img" alt="BCG Certificate">
         <h3>BCG GenAI Job Simulation</h3>
-        <p>Built a financial chatbot using SEC filings and GenAI techniques.</p>
+        <p>Built a chatbot analyzing SEC filings (10-K, 10-Q).</p>
       </div>
       <div class="col-6 box">
-        <img src="Screenshot 2025-07-23 195704.png" alt="Deloitte Certificate" class="cert-img">
+        <img src="Screenshot 2025-07-23 195704.png" class="cert-img" alt="Deloitte Certificate">
         <h3>Deloitte Data Analytics Simulation</h3>
-        <p>Created dashboards for fraud detection and reporting.</p>
+        <p>Created forensic dashboards using Tableau and Excel.</p>
       </div>
       <div class="col-6 box">
-        <img src="Screenshot 2025-07-23 195758.png" alt="Tata Certificate" class="cert-img">
+        <img src="Screenshot 2025-07-23 195758.png" class="cert-img" alt="Tata Certificate">
         <h3>Tata Data Visualization Simulation</h3>
-        <p>Framed business insights through effective visual storytelling.</p>
+        <p>Framed insights using business visualization techniques.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Contact Section -->
+<!-- Get in Touch Section -->
 <section id="footer">
   <div class="inner">
     <header><h2>Get in Touch</h2></header>
@@ -167,10 +216,10 @@
       </ul>
     </form>
     <ul class="icons">
-      <li><a href="mailto:akshadgoyanka@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-      <li><a href="https://www.linkedin.com/in/akshad-goyanka-933563253/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-      <li><a href="https://github.com/Aks18had" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-      <li><a href="https://drive.google.com/drive/folders/1gX-VwNzEqJ5ipK9jE2Al8Na4WTTW7eAs?usp=sharing" class="icon solid fa-file"><span class="label">Resume</span></a></li>
+      <li><a href="mailto:akshadgoyanka@gmail.com" class="icon solid fa-envelope" title="Email"></a></li>
+      <li><a href="https://www.linkedin.com/in/akshad-goyanka-933563253/" class="icon brands fa-linkedin" title="LinkedIn"></a></li>
+      <li><a href="https://github.com/Aks18had" class="icon brands fa-github" title="GitHub"></a></li>
+      <li><a href="https://drive.google.com/drive/folders/1gX-VwNzEqJ5ipK9jE2Al8Na4WTTW7eAs?usp=sharing" class="icon solid fa-file" title="Resume"></a></li>
     </ul>
   </div>
 </section>
