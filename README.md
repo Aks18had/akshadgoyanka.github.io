@@ -66,4 +66,4 @@ You can build your own portfolio by downloading the **Solid State** theme from [
 
 ---
 
-> _“In a world full of data, be the insight.”_
+> _“Data is the new oil. Insight is the refinery.”_
