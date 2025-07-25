@@ -1,15 +1,14 @@
 <!DOCTYPE HTML>
 <html>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JK91ABC123"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6X46K01NDK"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag(){ dataLayer.push(arguments); }
   gtag('js', new Date());
   gtag('config', 'G-6X46K01NDK');
 </script>
 
-  
 <head>
   <title>Akshad Goyanka - Portfolio</title>
   <meta charset="utf-8" />
@@ -26,20 +25,16 @@
     h1, h2, h3 {
       color: #ffffff;
     }
-
-    /* Grid Layout */
     .grid-2 {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 30px;
     }
-
     .box {
       background: #2a2a2a;
       padding: 1.5em;
       border-radius: 10px;
     }
-
     .project-img, .cert-img {
       width: 100%;
       height: 200px;
@@ -47,7 +42,6 @@
       border-radius: 5px;
       margin-bottom: 1em;
     }
-
     input, textarea {
       background: #2a2a2a;
       border: 1px solid #444;
@@ -56,7 +50,6 @@
       padding: 0.75em;
       border-radius: 6px;
     }
-
     input[type="submit"] {
       background: #00adb5;
       border: none;
@@ -66,11 +59,9 @@
       border-radius: 6px;
       transition: 0.3s;
     }
-
     input[type="submit"]:hover {
       background: #007b80;
     }
-
     .icons {
       margin-top: 1.5em;
       list-style: none;
@@ -80,28 +71,23 @@
       flex-wrap: wrap;
       gap: 2em;
     }
-
     .icons li {
       text-align: center;
     }
-
     .icons a {
       font-size: 1.8em;
       color: #00adb5;
       transition: 0.3s;
     }
-
     .icons a:hover {
       color: #ffffff;
     }
-
     .icons span.label {
       display: block;
       margin-top: 0.3em;
       font-size: 0.9em;
       color: #f0f0f0;
     }
-
     @media screen and (max-width: 768px) {
       .icons {
         flex-direction: column;
@@ -124,8 +110,7 @@
         Aspiring Data Professional actively seeking entry-level roles such as Junior Data Analyst, Data Scientist, AI/ML Intern.
         With a background in Electronics & Telecommunication and an MSc in Computer Science: AI & ML in progress, I’ve built hands-on
         projects in finance, product analytics, and GenAI. Skilled in Python, SQL, ML, and visualization tools, I enjoy transforming
-        complex data into actionable insights that drive business outcomes. Open to collaborating on impactful data-driven solutions!
-        Let’s connect and build something impactful together!
+        complex data into actionable insights that drive business outcomes. Open to collaborating on impactful data‑driven solutions! Let’s connect and build something impactful together!
       </p>
     </div>
   </div>
@@ -139,7 +124,7 @@
       <div class="box">
         <img src="Ai image.jpg" alt="Project 1" class="project-img">
         <h3>BCG GenAI Financial Chatbot</h3>
-        <p><strong>Summary:</strong> Built GenAI chatbot analyzing 10-K/10-Q reports.<br>
+        <p><strong>Summary:</strong> Built GenAI chatbot analyzing 10‑K/10‑Q reports.<br>
         <strong>Outcome:</strong> Enabled automated Q&A from complex financial docs.</p>
         <a href="https://github.com/Aks18had/BCG_GenAI_Financial_Simple_Chatbot" class="button small">GitHub</a>
       </div>
@@ -224,60 +209,35 @@
 <section id="footer">
   <div class="inner">
     <header><h2>Get in Touch</h2></header>
-    <form method="post" action="#">
+    <form method="post" action="#" id="contact-form">
       <div class="fields">
         <div class="field half"><input type="text" name="name" placeholder="Your Name" /></div>
         <div class="field half"><input type="email" name="email" placeholder="Your Email" /></div>
         <div class="field"><textarea name="message" placeholder="Your Message"></textarea></div>
       </div>
       <ul class="actions">
-        <li><input type="submit" value="Send Message" class="primary" /></li>
+        <li><input type="submit" value="Send Message" class="primary" id="submit-button" /></li>
       </ul>
     </form>
 
-    <!-- Contact Icons -->
     <ul class="icons">
-  <li>
-    <a href="mailto:akshadgoyanka@gmail.com"
-       class="icon solid fa-envelope"
-       title="Email"
-       onclick="gtag('event', 'click', {
-         event_category: 'Contact',
-         event_label: 'Email'
-       });"></a>
-    <span class="label">Email</span>
-  </li>
-  <li>
-    <a href="https://www.linkedin.com/in/akshad-goyanka-933563253/"
-       class="icon brands fa-linkedin"
-       title="LinkedIn"
-       onclick="gtag('event', 'click', {
-         event_category: 'Contact',
-         event_label: 'LinkedIn'
-       });"></a>
-    <span class="label">LinkedIn</span>
-  </li>
-  <li>
-    <a href="https://github.com/Aks18had"
-       class="icon brands fa-github"
-       title="GitHub"
-       onclick="gtag('event', 'click', {
-         event_category: 'Contact',
-         event_label: 'GitHub'
-       });"></a>
-    <span class="label">GitHub</span>
-  </li>
-  <li>
-    <a href="https://drive.google.com/drive/folders/1gX-VwNzEqJ5ipK9jE2Al8Na4WTTW7eAs?usp=sharing"
-       class="icon solid fa-file"
-       title="Resume"
-       onclick="gtag('event', 'click', {
-         event_category: 'Contact',
-         event_label: 'Resume'
-       });"></a>
-    <span class="label">Resume</span>
-  </li>
-</ul>
+      <li>
+        <a href="mailto:akshadgoyanka@gmail.com" id="email-link" class="icon solid fa-envelope" title="Email"></a>
+        <span class="label">Email</span>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/akshad-goyanka-933563253/" id="linkedin-link" class="icon brands fa-linkedin" title="LinkedIn" target="_blank" rel="noopener noreferrer"></a>
+        <span class="label">LinkedIn</span>
+      </li>
+      <li>
+        <a href="https://github.com/Aks18had" id="github-link" class="icon brands fa-github" title="GitHub" target="_blank" rel="noopener noreferrer"></a>
+        <span class="label">GitHub</span>
+      </li>
+      <li>
+        <a href="https://drive.google.com/drive/folders/1gX-VwNzEqJ5ipK9jE2Al8Na4WTTW7eAs?usp=sharing" id="resume-link" class="icon solid fa-file" title="Resume" target="_blank" rel="noopener noreferrer"></a>
+        <span class="label">Resume</span>
+      </li>
+    </ul>
   </div>
 </section>
 
@@ -288,6 +248,37 @@
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
+
+<!-- GA4 Contact Tracking -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const trackClick = (id, label) => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.addEventListener('click', () => {
+          gtag('event', 'click', {
+            event_category: 'Contact',
+            event_label: label
+          });
+        });
+      }
+    };
+    trackClick('email-link', 'Email');
+    trackClick('linkedin-link', 'LinkedIn');
+    trackClick('github-link', 'GitHub');
+    trackClick('resume-link', 'Resume');
+
+    const form = document.getElementById('contact-form');
+    if (form) {
+      form.addEventListener('submit', () => {
+        gtag('event', 'form_submission', {
+          event_category: 'Contact',
+          event_label: 'Contact Form Submitted'
+        });
+      });
+    }
+  });
+</script>
 
 </body>
 </html>
