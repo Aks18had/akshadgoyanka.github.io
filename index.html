@@ -88,6 +88,16 @@
       font-size: 0.9em;
       color: #f0f0f0;
     }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #1a1a1a;
+      color: #fff;
+    }
+    footer blockquote {
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
     @media screen and (max-width: 768px) {
       .icons {
         flex-direction: column;
@@ -209,11 +219,13 @@
 <section id="footer">
   <div class="inner">
     <header><h2>Get in Touch</h2></header>
-    <form method="post" action="#" id="contact-form">
+    <form method="POST" action="https://formsubmit.co/akshadgoyanka@gmail.com" id="contact-form">
       <div class="fields">
-        <div class="field half"><input type="text" name="name" placeholder="Your Name" /></div>
-        <div class="field half"><input type="email" name="email" placeholder="Your Email" /></div>
-        <div class="field"><textarea name="message" placeholder="Your Message"></textarea></div>
+        <div class="field half"><input type="text" name="name" placeholder="Your Name" required /></div>
+        <div class="field half"><input type="email" name="email" placeholder="Your Email" required /></div>
+        <div class="field"><textarea name="message" placeholder="Your Message" required></textarea></div>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
       </div>
       <ul class="actions">
         <li><input type="submit" value="Send Message" class="primary" id="submit-button" /></li>
@@ -240,6 +252,12 @@
     </ul>
   </div>
 </section>
+
+<!-- Footer Quote and Credit -->
+<footer>
+  <p>&copy; Solid State | Created by Akshad Goyanka</p>
+  <blockquote>“Data is the new oil. Insight is the refinery.”</blockquote>
+</footer>
 
 <!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
